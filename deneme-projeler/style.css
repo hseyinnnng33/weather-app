@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+#genel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e3e3e9;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.genel_h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.genel_h2 span{
+    font-size: 20px;
+    color: #b36cd2;
+    font-weight: bold;
+}
+
+#genel .icerik{
+    width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+    animation: weatherAnimation 5s infinite;
+    text-align: center;
+}
+
+.icerik .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.icerik .input input{
+   border: none;
+   padding: 15px 20px;
+   border-radius: 20px;
+   width: 300px;
+   outline: none;
+   background-color: #eef7ec;
+   font-weight: 600;
+   color: #554089;
+}
+
+.icerik .input span{
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #eef7ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: .5s;
+}
+
+.icerik .input span:hover{
+    background-color: #d16897;
+    color: #fff;
+}
+
+.icerik .img-resim{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.icerik .img-resim span{
+    display: block;
+    font-size: 50px;   
+}
+
+.icerik .hava_durumu{
+    margin-bottom: 20px;
+    
+}
+
+.icerik .hava_durumu h2{
+    font-size: 30px;
+}
+
+.icerik .sehir_ismi h2{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.bir{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bir h2{
+    font-size: 16px;
+}
+
+@keyframes weatherAnimation {
+    0% {
+      background-color: #cfd2eb; /* Başlangıç renk - Örneğin: Mavi */
+    }
+    50% {
+      background-color: #cacded; /* Orta renk - Örneğin: Turuncu */
+    }
+    100% {
+      background-color: #cfd1e8; /* Bitiş renk - Örneğin: Mavi */
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    #genel .icerik{
+        width: 90%;
+    }
+}
